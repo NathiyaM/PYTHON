@@ -2,7 +2,7 @@
 import sqlite3 #Import the SQLite3 module
 try:
     # Creates or opens a file called mydb with a SQLite3 DB
-    db = sqlite3.connect('data/mydb')
+    db = sqlite3.connect('mydb')
     # Get a cursor object
     cursor = db.cursor()
     # Check if table users does not exist and create it
