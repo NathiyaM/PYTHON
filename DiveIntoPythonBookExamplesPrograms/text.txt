@@ -1,0 +1,5 @@
+list of items learned today
+string.ascii_lowercase
+random.randint
+reverse the list
+negative indices
