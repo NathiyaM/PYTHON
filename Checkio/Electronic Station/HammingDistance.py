@@ -1,20 +1,39 @@
 def HammingDistance(number1,number2):
-    numb1=bin(number1)
-    print(num1)
-    num2=bin(number2)
-    print(num1,num2)
-    count1=count2=0
-    for ch in str(num1):
-        if ch=='1':
-            count1+=1
-    for ch in str(num2):
-        if ch=='1':
-            count1+=1
-    diff=abs(count1-count2)
-    return diff
+    print(bin(number1 ^ number2).count('1'))
+    ''' list1 = []
+    list2 = []
+    while(number1>0):
+        rem = number1%2
+        number1 = number1//2
+        list1.append(rem)
+    while(number2>0):
+        rem = number2%2
+        number2 = number2//2
+        list2.append(rem)
+    if(len(list1)>len(list2)):
+        while(len(list1)>len(list2)):
+            list2.append(0)
+    else:
+        while(len(list2)>len(list1)):
+            list1.append(0)
 
-num1=117
-num2=7
-result=HammingDistance(num1,num2)
-print(result)
+    list1.reverse()
+    list2.reverse()
+
+    print(list1,list2)
+    result=[]
+    for i ,j in zip(list1,list2):
+        if (i==1 and j==1) or (i == 0 and j == 0) :
+            result.append(0)
+        elif (i==1 and j==0) or (i==0 and j==1 ):
+            result.append(1)
+    print(result)
+    print(sum(result))'''
+
+
+
+num1=1
+num2=2
+HammingDistance(num1,num2)
+
 
